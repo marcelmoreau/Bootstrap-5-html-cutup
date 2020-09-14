@@ -1,0 +1,20 @@
+/**
+ * Base
+ */
+
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.skippy {
+    background-color: $yellow;
+    color: color-contrast($yellow);
+    left: $grid-gutter-width / 2;
+    padding: 0.5rem;
+    position: fixed;
+    top: $grid-gutter-width / 2;
+    z-index: $zindex-fixed;
+}
+

@@ -1,0 +1,32 @@
+/**
+ * Components > Iconset
+ */
+
+.iconset {
+    text-align: center;
+    &__asset {
+        color: $orange;
+        font-size: 4rem;
+        margin-bottom: $spacer * 0.25;
+    }
+
+    @include media-breakpoint-up(md) {
+        @include make-row();
+        justify-content: center;
+    }
+
+    .iconset__item {
+        padding-bottom: $grid-gutter-width / 2;
+        padding-top: $grid-gutter-width / 2;
+        @include media-breakpoint-up(md) {
+            @include make-col-ready();
+            @include make-col(6);
+        }
+
+        @include media-breakpoint-up(lg) {
+            @include make-col(3);
+            width: 240px;
+        }
+    }
+}
+

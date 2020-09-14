@@ -1,0 +1,26 @@
+/**
+ * Components > Buttons
+ * Extends Bootstrap’s buttons.scss
+ */
+
+.btn--whack {
+    @include button-size($btn-padding-y, $btn-padding-x, 1.125rem, 8px);
+    @include button-variant(hsl(184, 66, 65), hsl(184, 66, 65), $hover-background: purple, $hover-border: purple);
+    border-radius: 10px;
+    letter-spacing: 0.05em;
+    padding-right: 36px;
+    position: relative;
+    text-transform: uppercase;
+    &::before {
+        background-color: orange;
+        box-shadow: inset 0 0 0 2px white;
+        bottom: auto;
+        content: '';
+        display: block;
+        height: 16px;
+        position: absolute;
+        right: -8px;
+        top: -8px;
+        width: 16px;
+    }
+}

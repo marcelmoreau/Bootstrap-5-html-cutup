@@ -1,0 +1,13 @@
+/**
+ * Abtracts > Mixins > Layer
+ */
+
+@mixin layer($padding-y: $layer-padding-y) {
+    @include padding-bottom($padding-y);
+    @include padding-top($padding-y);
+}
+
+@mixin layer-variant($background) {
+    @include gradient-directional($background, shade-color($background, 2));
+    color: color-contrast($background);
+}

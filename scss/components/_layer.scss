@@ -1,0 +1,16 @@
+/**
+ * Components > Layer
+ */
+
+.layer {
+    @include layer();
+    &--dark {
+        @include layer-variant(hsl(240, 100%, 6%));
+    }
+
+    &--light {
+        @include layer-variant($gray-200);
+    }
+}
+
+

@@ -1,0 +1,10 @@
+/**
+ * Base > Iconography
+ * To avoid file bloat, we only declare the Font Awesome icons we use.
+ */
+
+// User Interface
+.#{$fa-css-prefix}-truck:before { content: fa-content($fa-var-truck); }
+.#{$fa-css-prefix}-fingerprint:before { content: fa-content($fa-var-fingerprint); }
+.#{$fa-css-prefix}-coins:before { content: fa-content($fa-var-coins); }
+.#{$fa-css-prefix}-mitten:before { content: fa-content($fa-var-mitten); }
