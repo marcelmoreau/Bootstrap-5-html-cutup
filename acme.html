@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/main.css">
-        <title>Acme Masthead (Bootstrap v5)</title>
+        <title>Acme Masthead Starter (Bootstrap v5)</title>
     </head>
     <body>
         <div class="shell">
@@ -12,41 +12,44 @@
             <div class="masthead">
                 <div class="masthead__body">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <div class="container-xxl flex-lg-wrap">
-
+                        <div class="container-fluid flex-lg-wrap">
                             <div class="masthead__brand">
                                 <a class="navbar-brand" href="#">
                                     <img src="assets/img/logo-acme.png" alt="Acme" />
                                 </a>
                             </div>
-
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav mr-auto ml-lg-n3 mt-4 mt-lg-0">
+                                <ul class="navbar-nav mr-auto ml-lg-n3 mt-4">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Products</a>
+                                        <a class="nav-link active" aria-current="page" href="#">Products</a>
                                     </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                                            Services
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" role="button">
+                                            About
                                         </a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">About</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </nav>
+                </div>
+            </div>
+
+            <div class="hero">
+                <div class="container-xxl">
+                    <div class="row">
+                        <div class="col-xl-8">
+                            <h1 class="hero__heading">Acme’s lorem ipsum commodo sit magna dolar</h1>
+                            <div class="hero__lead">Sociis natoque penatibus et lorem magnis discuae parturient montes, nascetur ridiculus mus.</div>
+                            <a class="btn btn-secondary" href="">Hello World</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 

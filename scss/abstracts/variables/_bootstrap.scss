@@ -62,8 +62,7 @@ $colors: (
 ) !default;
 // scss-docs-end colors-map
 
-// $primary: $blue !default;
-$primary: $valhalla !default;
+$primary: $blue !default;
 $secondary: $green;
 $success: $green !default;
 $info: $cyan !default;
@@ -220,7 +219,7 @@ $escaped-characters: (
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-caret: true !default;
-$enable-rounded: true !default;
+$enable-rounded: false;
 $enable-shadows: false !default;
 $enable-gradients: false;
 $enable-transitions: true !default;
@@ -269,7 +268,7 @@ $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) 
 // Settings for the `<body>` element.
 
 $body-bg: $white;
-$body-color: $gray-900 !default;
+$body-color: $gray-900;
 $body-text-align: null !default;
 
 
@@ -277,7 +276,7 @@ $body-text-align: null !default;
 //
 // Style anchor elements.
 
-$link-color: $primary !default;
+$link-color: $valhalla;
 $link-decoration: none;
 $link-hover-color: darken($link-color, 20%);
 $link-hover-decoration: null !default;
@@ -379,8 +378,8 @@ $box-shadow-inset: inset 0 1px 2px rgba($black, 0.075) !default;
 $component-active-color: $white !default;
 $component-active-bg: $primary !default;
 
-$component-padding-x: map-get($spacers, 4);
-$component-padding-y: map-get($spacers, 4);
+$component-padding-x: $spacer * 1.5;
+$component-padding-y: $spacer * 1.5;
 
 $caret-width: 0.3em !default;
 $caret-vertical-align: $caret-width * 0.85 !default;
@@ -436,7 +435,6 @@ $font-weight-light: 300 !default;
 $font-weight-normal: 400 !default;
 $font-weight-bold: 500;
 $font-weight-bolder: 700;
-// $font-weight-boldest: 800;
 
 
 $font-weight-base: $font-weight-normal !default;
@@ -590,7 +588,7 @@ $input-btn-border-width: 2px;
 // For each of Bootstrap's buttons, define text, background, and border color.
 
 $btn-padding-y: $input-btn-padding-y !default;
-$btn-padding-x: map-get($spacers, 3);
+$btn-padding-x: $spacer;
 $btn-font-family: $input-btn-font-family !default;
 $btn-font-size: $input-btn-font-size !default;
 $btn-line-height: $input-btn-line-height !default;
@@ -606,7 +604,7 @@ $btn-font-size-lg: $input-btn-font-size-lg !default;
 
 $btn-border-width: $input-btn-border-width !default;
 
-$btn-font-weight: $font-weight-bold;
+$btn-font-weight: $font-weight-normal;
 $btn-box-shadow: inset 0 1px 0 rgba($white, 0.15), 0 1px 1px rgba($black, 0.075) !default;
 $btn-focus-width: $input-btn-focus-width !default;
 $btn-focus-box-shadow: $input-btn-focus-box-shadow !default;
@@ -881,9 +879,8 @@ $zindex-9: 900;
 
 // Navs
 
-$nav-link-padding-y: 0.5rem !default;
-// $nav-link-padding-x: 1rem;
-$nav-link-padding-x: 2rem;
+$nav-link-padding-y: .5rem !default;
+$nav-link-padding-x: 1rem !default;
 $nav-link-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out !default;
 $nav-link-disabled-color: $gray-600 !default;
 
@@ -910,7 +907,6 @@ $nav-pills-link-active-bg: $component-active-bg !default;
 $navbar-padding-y: $spacer / 2 !default;
 $navbar-padding-x: null !default;
 
-// $navbar-nav-link-padding-x: 0.5rem !default;
 $navbar-nav-link-padding-x: 1rem;
 
 $navbar-brand-font-size: $font-size-lg !default;
@@ -923,7 +919,7 @@ $navbar-brand-margin-right: 1rem !default;
 $navbar-toggler-padding-y: 0.25rem !default;
 $navbar-toggler-padding-x: 0.75rem !default;
 $navbar-toggler-font-size: $font-size-lg !default;
-$navbar-toggler-border-radius: $btn-border-radius !default;
+$navbar-toggler-border-radius: 0;
 $navbar-toggler-focus-width: $btn-focus-width !default;
 $navbar-toggler-transition: box-shadow 0.15s ease-in-out !default;
 
@@ -934,7 +930,7 @@ $navbar-dark-disabled-color: rgba($white, 0.25) !default;
 $navbar-dark-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
 $navbar-dark-toggler-border-color: rgba($white, 0.1) !default;
 
-$navbar-light-color: rgba($black, 0.55) !default;
+$navbar-light-color: $valhalla;
 $navbar-light-hover-color: rgba($black, 0.7) !default;
 $navbar-light-active-color: rgba($black, 0.9) !default;
 $navbar-light-disabled-color: rgba($black, 0.3) !default;
@@ -1315,7 +1311,7 @@ $pre-color: null !default;
 
 // Layers
 
-$layer-padding-y: map-get($spacers, 10);
+$layer-padding-y: $spacer * 6;
 
 
 // Hero
@@ -1327,12 +1323,12 @@ $hero-padding-y: $layer-padding-y;
 
 $listing-item-border-width: $border-width;
 $listing-item-border-color: $border-color;
-$listing-item-padding-y: map-get($spacers, 4);
+$listing-item-padding-y: $spacer * 1.5;
 
 
 // Masthead
 
-$masthead-body-padding-y: map-get($spacers, 4);
+$masthead-body-padding-y: $spacer * 1.5;
 
 
 // Meta
@@ -1340,30 +1336,3 @@ $masthead-body-padding-y: map-get($spacers, 4);
 $meta-color: $gray-600;
 $meta-border-color: $border-color;
 $meta-margin-bottom: $paragraph-margin-bottom;
-
-
-// Offer
-
-$offer-padding-x: $component-padding-x;
-$offer-padding-y: map-get($spacers, 3);
-$offer-standout-bg: $primary;
-
-
-// Accordion
-
-$accordion-bg: $gray-400;
-$accordion-border-width: $border-width;
-$accordion-border-radius: $border-radius;
-$accordion-border-color: $gray-600;
-$accordion-padding-x: 1rem;
-$accordion-padding-y: 1rem;
-$accordion-padding-x-sm: 0.725rem;
-$accordion-padding-y-sm: 0.725rem;
-$accordion-padding-x-lg: 1.25rem;
-$accordion-padding-y-lg: 1.25rem;
-
-
-// Videobg
-
-$videobg-padding-y: $layer-padding-y;
-$videobg-padding-y-sm: $layer-padding-y;

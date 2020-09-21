@@ -10,7 +10,7 @@
 @import 'abstracts/__abstracts-dir';
 
 // Vendor
-// here, we cherry-pick the Bootstrap Sass files from NPM. we do the same for Font Awesome
+// here, we cherry-pick the Boostrap Sass files from NPM. we do the same for Font Awesome
 @import 'vendor/__vendor-dir';
 
 // Base Styles
@@ -25,3 +25,45 @@
 // this holds general structure-based stuff like our header. a footer could live here, too
 @import 'layouts/__layouts-dir';
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// we might use this for debugging
+// [class*="col-"] {
+//     box-shadow: inset 0 0 0 1px red;
+// }

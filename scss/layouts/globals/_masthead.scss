@@ -3,19 +3,12 @@
  */
 
 .masthead {
-
     &__brand {
         max-width: 140px;
-        @include media-breakpoint-up(lg) {
-            margin-bottom: $spacer;
-        }
     }
 
     &__body {
         @include padding-bottom($masthead-body-padding-y);
         @include padding-top($masthead-body-padding-y);
     }
-
 }
-
-

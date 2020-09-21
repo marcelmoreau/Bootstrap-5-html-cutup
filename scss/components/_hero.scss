@@ -2,35 +2,12 @@
  * Components > Hero
  */
 
-
-
-
 .hero {
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.hero {
-    @include hero();
+    @include gradient-directional(gold, tint-color(gold, 3));
+    box-shadow: inset 0 -6px 0 0 shade-color(gold, 4);
+    color: color-contrast(gold);
+    padding-bottom: 4rem;
+    padding-top: 4rem;
     &__heading {
         font-weight: $font-weight-bold;
     }
@@ -38,38 +15,17 @@
         font-size: 1.25rem;
         margin-bottom: $spacer * 3;
     }
-
 }
 
 
 
 
-.hero--primary {
-    @include hero-variant($primary);
-}
-
-.hero--light {
-    @include hero-variant($gray-200);
-}
-
-.hero--flat {
-    @include hero-variant($gray-600, 0);
-}
-
-.hero--halloween {
-    @include hero-variant(orange);
-}
 
 
-
-@mixin hero($padding-y: $hero-padding-y) {
-    @include padding-bottom($padding-y);
-    @include padding-top($padding-y);
-}
-
-@mixin hero-variant($background, $hero-inset: 6px) {
-    @include gradient-directional($background, tint-color($background, 3));
-    box-shadow: inset 0 -#{$hero-inset} 0 0 shade-color($background, 4);
-    color: color-contrast($background);
-}
-
+/*
+    make secondary button green and lighter-weight
+    hero lead styles
+    RFS padding
+    create a hero padding-y variable
+    mixin abstracting (hero and hero-variant)
+*/

@@ -2,13 +2,13 @@
  * Abtracts > Mixins > Hero
  */
 
-@mixin hero($padding-y: $hero-padding-y) {
-    @include padding-bottom($padding-y);
-    @include padding-top($padding-y);
-}
+// @mixin hero($padding-y: $hero-padding-y) {
+//     @include padding-bottom($padding-y);
+//     @include padding-top($padding-y);
+// }
 
-@mixin hero-variant($background, $hero-inset: 6px) {
-    @include gradient-directional($background, tint-color($background, 3));
-    box-shadow: inset 0 -#{$hero-inset} 0 0 shade-color($background, 4);
-    color: color-contrast($background);
-}
+// @mixin hero-variant($background, $hero-inset: 6px) {
+//     @include gradient-directional($background, tint-color($background, 3));
+//     box-shadow: inset 0 -#{$hero-inset} 0 0 shade-color($background, 4);
+//     color: color-contrast($background);
+// }
