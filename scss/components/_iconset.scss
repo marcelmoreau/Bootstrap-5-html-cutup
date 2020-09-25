@@ -2,17 +2,20 @@
  * Components > Iconset
  */
 
-.iconset {
+ .iconset {
     text-align: center;
+
     &__asset {
         color: $orange;
         font-size: 4rem;
         margin-bottom: $spacer * 0.25;
     }
 
-    @include media-breakpoint-up(md) {
-        @include make-row();
-        justify-content: center;
+    &__wrapper {
+        @include media-breakpoint-up(md) {
+            @include make-row();
+            justify-content: center;
+        }
     }
 
     .iconset__item {
@@ -29,4 +32,3 @@
         }
     }
 }
-

@@ -3,11 +3,20 @@
  */
 
 .hero {
-    @include gradient-directional(gold, tint-color(gold, 3));
-    box-shadow: inset 0 -6px 0 0 shade-color(gold, 4);
-    color: color-contrast(gold);
-    padding-bottom: 4rem;
-    padding-top: 4rem;
+    @include hero();
+
+    &--primary {
+        @include hero-variant($valhalla, $hero-inset: 6px);
+    }
+
+    &--secondary {
+        @include hero-variant(hotpink, $hero-inset: 2px);
+    }
+
+    &--light {
+        @include hero-variant($gray-500, $hero-inset: 12px);
+    }
+
     &__heading {
         font-weight: $font-weight-bold;
     }
@@ -15,17 +24,16 @@
         font-size: 1.25rem;
         margin-bottom: $spacer * 3;
     }
+
+    @include media-breakpoint-up(xl) {
+        &__wrapper {
+            @include make-row();
+        }
+
+        &__main {
+            @include make-col-ready();
+            @include make-col(8);
+        }
+    }
 }
 
-
-
-
-
-
-/*
-    make secondary button green and lighter-weight
-    hero lead styles
-    RFS padding
-    create a hero padding-y variable
-    mixin abstracting (hero and hero-variant)
-*/

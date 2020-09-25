@@ -11,4 +11,18 @@
         @include padding-bottom($masthead-body-padding-y);
         @include padding-top($masthead-body-padding-y);
     }
+
+    &__navbar .masthead__wrapper {
+        @include media-breakpoint-up(lg) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__navbar-nav {
+        margin-right: auto;
+        margin-top: $spacer * 1.5;
+        @include media-breakpoint-up(lg) {
+            margin-left: -$spacer;
+        }
+    }
 }

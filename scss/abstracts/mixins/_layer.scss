@@ -8,6 +8,6 @@
 }
 
 @mixin layer-variant($background) {
-    @include gradient-directional($background, shade-color($background, 2));
+    background-color: $background;
     color: color-contrast($background);
 }

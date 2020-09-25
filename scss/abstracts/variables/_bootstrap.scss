@@ -1,5 +1,5 @@
 /**
- * bootstrap scss variable overrides
+ * Acme’s Bootstrap variable overrides
  */
 
 
@@ -221,7 +221,7 @@ $escaped-characters: (
 $enable-caret: true !default;
 $enable-rounded: false;
 $enable-shadows: false !default;
-$enable-gradients: false;
+$enable-gradients: true;
 $enable-transitions: true !default;
 $enable-reduced-motion: true !default;
 $enable-grid-classes: true !default;

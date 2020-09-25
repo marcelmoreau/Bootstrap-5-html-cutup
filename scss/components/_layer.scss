@@ -4,6 +4,7 @@
 
 .layer {
     @include layer();
+
     &--dark {
         @include layer-variant(hsl(240, 100%, 6%));
     }
@@ -11,6 +12,48 @@
     &--light {
         @include layer-variant($gray-200);
     }
+
+    &--accent {
+        margin-left: -$spacer * 2;
+        margin-right: -$spacer * 2;
+        padding-left: $spacer * 2;
+        padding-right: $spacer * 2;
+    }
+
+    &__heading {
+        margin-bottom: 1.75rem;
+    }
+
+    &__copy {
+        margin-bottom: 1.5rem;
+    }
+
+    &__main {
+        margin-bottom: $spacer * 2.5;
+    }
+
+    @include media-breakpoint-up(lg) {
+        &__wrapper {
+            @include make-row();
+        }
+        &__main {
+            @include make-col-ready();
+            @include make-col(5);
+            margin-bottom: 0;
+        }
+
+        &__asset {
+            @include make-col-ready();
+            @include make-col(7);
+        }
+    }
+
+    &__assetoffset {
+        @include media-breakpoint-up(xl) {
+            margin-bottom: -$spacer * 8;
+        }
+        @include media-breakpoint-up(xxl) {
+            margin-right: -$spacer * 4;
+        }
+    }
 }
-
-

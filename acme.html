@@ -4,15 +4,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/main.css">
-        <title>Acme Masthead Starter (Bootstrap v5)</title>
+        <title>Acme Starter (Bootstrap v5)</title>
     </head>
     <body>
         <div class="shell">
 
             <div class="masthead">
                 <div class="masthead__body">
-                    <nav class="navbar navbar-expand-lg navbar-light">
-                        <div class="container-fluid flex-lg-wrap">
+                    <nav class="navbar navbar-expand-lg navbar-light masthead__navbar">
+                        <div class="container-xxl masthead__wrapper">
                             <div class="masthead__brand">
                                 <a class="navbar-brand" href="#">
                                     <img src="assets/img/logo-acme.png" alt="Acme" />
@@ -22,7 +22,7 @@
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav mr-auto ml-lg-n3 mt-4">
+                                <ul class="navbar-nav masthead__navbar-nav">
                                     <li class="nav-item">
                                         <a class="nav-link active" aria-current="page" href="#">Products</a>
                                     </li>
@@ -41,10 +41,10 @@
                 </div>
             </div>
 
-            <div class="hero">
+            <div class="hero hero--primary">
                 <div class="container-xxl">
-                    <div class="row">
-                        <div class="col-xl-8">
+                    <div class="hero__wrapper">
+                        <div class="hero__main">
                             <h1 class="hero__heading">Acme’s lorem ipsum commodo sit magna dolar</h1>
                             <div class="hero__lead">Sociis natoque penatibus et lorem magnis discuae parturient montes, nascetur ridiculus mus.</div>
                             <a class="btn btn-secondary" href="">Hello World</a>
@@ -53,8 +53,74 @@
                 </div>
             </div>
 
-        </div>
+            <div class="container-xxl">
+                <div class="layer layer--dark layer--accent">
+                    <div class="layer__wrapper">
+                        <div class="layer__main">
+                            <h2 class="h1 layer__heading">
+                                Hello World
+                            </h2>
+                            <p class="layer__copy">
+                                Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui.
+                            </p>
+                            <div>
+                                <a href="" class="btn btn--whack">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                        <div class="layer__asset">
+                            <div class="layer__assetoffset">
+                                <img src="assets/img/cat.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="layer layer--light">
+                <div class="container-xxl">
+                    <div class="iconset">
+                        <h3 class="display-4 iconset__heading">Real Lorem Ipsum. All The Time.</h3>
+                        <div class="iconset__wrapper">
+                            <div class="iconset__item">
+                                <div class="iconset__asset">
+                                    <i class="fas fa-truck"></i>
+                                </div>
+                                <div>
+                                    About to run over the other icons
+                                </div>
+                            </div>
+                            <div class="iconset__item">
+                                <div class="iconset__asset">
+                                    <i class="fas fa-fingerprint"></i>
+                                </div>
+                                <div>
+                                    Lorem ipsum dolar amat egestas
+                                </div>
+                            </div>
+                            <div class="iconset__item">
+                                <div class="iconset__asset">
+                                    <i class="fas fa-coins"></i>
+                                </div>
+                                <div>
+                                    Nullam quis risus eget urna mollis ornare vel eu leo
+                                </div>
+                            </div>
+                            <div class="iconset__item">
+                                <div class="iconset__asset">
+                                    <i class="fas fa-mitten"></i>
+                                </div>
+                                <div>
+                                    Morbi leo risus, porta ac consectetur
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
         <script type="module" src="assets/js/main.js"></script>
     </body>
 </html>
