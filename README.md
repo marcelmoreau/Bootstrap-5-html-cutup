@@ -1,10 +1,10 @@
 # Bootstrap 5 design cutup
 
-This repository is paired with a video tutorial that implements a “real world” design-to-HTML cutup via Bootstrap 5. It is based on an alpha release of Bootstrap 5.
+This repository is paired with a video tutorial that implements a “real world” design-to-HTML cutup via Bootstrap 5. It is based on an alpha release of Bootstrap 5. This repo is forked from the [Bootstrap NPM Starter](https://github.com/twbs/bootstrap-npm-starter).
 
 ## Relevant links
 
-Video:
+Video: https://youtu.be/4EwbsqPdLRM
 
 Environment via Bootstrap’s NPM starter: https://github.com/twbs/bootstrap-npm-starter
 
